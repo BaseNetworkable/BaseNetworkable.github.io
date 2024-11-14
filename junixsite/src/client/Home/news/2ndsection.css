@@ -1,0 +1,25 @@
+.titleswrapper{
+    margin-bottom:5vh;
+}
+.titles{
+    padding-left: 43px;
+
+}
+.secondpsectionwrapper{
+    width: 74%;
+    margin-top:auto;
+    padding-left:13% ;
+    padding-right:13%;
+    background-origin: padding-box;
+    background-color:white   ;
+    margin-top:0;
+    margin-bottom:5rem;
+  }
+  .secondpsectionwrapper h1{
+    margin-top:0;
+
+  }
+  .secondpsection{
+    width: 100%;
+    background-color: white;
+  }

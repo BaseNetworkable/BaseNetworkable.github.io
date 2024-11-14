@@ -1,0 +1,81 @@
+.SectionTitle{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: "Gilroy", sans-serif;
+font-size: 4rem;
+filter:drop-shadow(1px 1px 2px #2b2867)
+}
+
+
+@media only screen and (max-width: 862px){
+    .SectionTitle {font-size: 2rem;}
+    .imgtitle1{font-size: 1rem;}
+    .imgtitle2{font-size: 1rem;}
+    .imgtitle3{font-size: 1rem;}
+    .imgtitle4{font-size: 1rem;}
+    .compimg{height:2rem !important; width: 60vw !important; align-items: center;}
+
+}
+
+
+.standardiv{
+    width: 82vw;
+    height:inherit;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    text-shadow: #fff 1px  2px 3px;
+
+}
+.compimg{
+    border: 0.5vw solid #f0f0f4 !important;
+    border-radius: 5px;
+    height: 12rem;
+    min-height: 5rem;
+    padding:2.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0.8rem;
+    
+    font-size: 3rem; 
+    text-align: center;
+    justify-content: center;
+    transform: skewX(-3deg);
+    background-color: #ef4136;
+
+  
+
+}
+.imgtitle1{
+    position: relative;
+    
+    color: #2b2867;
+    font-family: "Gilroy",sans-serif;
+    
+}
+.imgtitle2{
+    position: relative;
+    color: #2b2867;
+
+    font-family: "Gilroy",sans-serif;
+    
+}
+.imgtitle3{
+    position: relative;
+    color: #2b2867;
+
+    font-family: "Gilroy",sans-serif;
+ 
+}
+.imgtitle4{
+    position: relative;
+    color: #2b2867;
+    font-family: "Gilroy",sans-serif;
+
+}

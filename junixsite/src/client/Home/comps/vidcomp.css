@@ -1,0 +1,16 @@
+.selfvideo{
+    position:relative   ;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    -webkit-filter:     
+                        brightness(130%)
+                        contrast(100%);
+     filter:    
+                brightness(130%)
+                contrast(100%);
+ margin-bottom:5rem;
+
+
+}
+

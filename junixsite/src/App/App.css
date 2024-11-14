@@ -1,0 +1,169 @@
+html{
+  font-size: 14px;
+  font-family: "Gilroy", sans-serif;
+}
+
+
+body {
+  padding: 0;
+  margin:0;  
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.allwrapper{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+/* 
+
+MENU
+
+*/
+
+.Smenu{
+  position: fixed;
+  display:flex;
+  flex-direction: column;
+  width: 10vw;
+  height: 100vh;
+  margin-right: 1vw;
+  margin-left:1vw;
+  margin-top: 1vh;
+  background-color: rgba(0,0,0,0);
+  padding-right: 1vw;
+  overflow: hidden;
+  z-index: 11;
+}
+
+.homelogomenu {
+  max-width: 100%;
+  width:fit-content;
+  height:100%;
+  object-fit: cover;
+ 
+}
+.MenuItems{
+  width:fit-content;
+  height:fit-content;
+  
+  gap: 0;
+
+
+}
+.active{
+ animation-name: colorchange;
+ animation-duration: 0.3s;
+ animation-fill-mode: ease-in;
+}
+.menutext{
+font-size: 2rem;
+font-family: "Gilroy",sans-serif;
+word-break:break-all;
+white-space: pre-wrap;
+text-align: center ;
+margin:0 auto;
+font-weight: 600;
+text-size-adjust: none;
+margin-bottom: 5vh;
+overflow: hidden;
+-webkit-text-fill-color: black;
+-webkit-text-stroke: 0.1rem white;
+
+}
+
+.active2{
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+  animation-delay: 0s;
+  animation-name: squeeze;
+}
+.MenuItems2{
+  width:fit-content;
+  height:fit-content;
+  border-radius: 15%;
+  border: 2rem;
+  gap: 0;
+}
+
+
+ 
+.menutext2{
+  font-size: 1.5rem;
+  font-family: "Gilroy",sans-serif;
+  word-break:break-all;
+  white-space: pre-wrap;
+  text-align: center ;
+  font-style: italic;
+  font-weight: 600;
+  text-size-adjust: none;
+  position:relative;
+  text-decoration: none;
+  overflow: visible;
+ margin: 0 auto;
+ -webkit-text-fill-color: black;
+-webkit-text-stroke: 0.1vh white;
+}
+
+
+  
+
+
+
+
+@media only screen and (max-width: 862px){
+  .menutext, .menutext2{visibility: hidden;}
+}
+
+@keyframes squeeze 
+{
+  0%{
+    background-color:none;
+  }
+  100%{
+    background-color: rgba(43, 40, 103, 1);
+  animation-fill-mode: forwards;
+  }
+  
+}
+
+@keyframes colorchange
+{
+  0% {
+  
+
+  }
+  40%{
+    filter:blur(3px) ;
+  }
+  80%{
+    padding: 1vw;
+  }
+ 100% {
+    filter:hue-rotate(245deg) saturate(80%) brightness(45%) ;
+    padding: 0;
+  }
+  
+}
+
+@keyframes padding1{
+0%{
+  padding: 0;
+}
+100%{
+  padding: 1vw;
+}
+}
+.homelogomenu2 {
+  max-width: 100%;
+  width:fit-content;
+  height:90%;
+  object-fit: cover;
+  padding-right:2rem;
+}
+h1{
+  margin-bottom:10vh;
+}
