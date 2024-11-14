@@ -1,9 +1,12 @@
 {
+  "homepage": "http:://BaseNetworkable.github.io/devp",
   "name": "junixsite",
   "version": "4.2.15",
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider razzle start",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider razzle build --noninteractive",
     "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider razzle test --env=jsdom",
     "start:prod": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production node build/server.js"
