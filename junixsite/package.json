@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider razzle start",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider razzle build --noninteractive",
     "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider razzle test --env=jsdom",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "babel-preset-razzle": "4.2.15",
     "classnames": "^2.5.1",
+    "gh-pages": "^6.2.0",
     "html-webpack-plugin": "^4.5.2",
     "mini-css-extract-plugin": "^0.9.0",
     "razzle": "4.2.15",
